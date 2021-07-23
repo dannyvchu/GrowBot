@@ -20,6 +20,7 @@ class PeristalticPump():
         self.deg_fb = 0 # angle feedback 
         self.motor_delay_ms = 5 # ms
         self.simulate = True # simulate pin outputs
+        self.zero() # Initialize rotation to zero degrees
 
     def move_vel(self, vel_cmd):
         # Moves the pump in a direction at a constant speed

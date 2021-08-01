@@ -1,5 +1,26 @@
 # Growbot v0.9
 
+
+# Create variables per plant and config (json)
+# Regular check
+    # Moistness
+    # Temp
+    # (water level)
+    # Ambient light
+# Log all measurements into csv
+    # Create list of instructions from log
+        # If moist < a for x time, initiate pump
+        # Email moment any problems arise
+# Run statistical analysis on data
+    # over past 24hrs (max, min, avg)
+        # moistness
+        # temp/rh
+        # ambient light
+        # time lapse
+    # same for weekly and monthly average
+# Email at end of day results of log
+
+
 ## Goals
 - **Keep plants alive**
     - Choose 1-2 plants and focus on collecting a good dataset

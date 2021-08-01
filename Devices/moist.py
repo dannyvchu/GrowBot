@@ -1,5 +1,5 @@
 # Import Depencies
-import time
+import time, random
 
 
 # Create Moisture Sensor Class
@@ -13,20 +13,23 @@ class MoistureSensor():
     # Take soil moisture reading
     def read_soil(self):
         # Turn on power
-        self._power(pwr_pin, True)
+        self._power(True)
         # Wait 10 milliseconds
         time.sleep(.01)
         # Read and save the signal from sensor
-        self.moistness = self._analogRead(sig_pin)
+        self.moistness = self._perc_read(sim=True)
         # Turn off power
-        self._power(pwr_pin, False)
+        self._power(False)
         # Return value
         return self.moistness
 
-    def _power(self, pin, state):
+    def _power(self, state):
         # On or Off power
+        # use self.pwr_pin
         pass
 
-    def _perc_read(self, pin):
+    def _perc_read(self,sim=False):
         # Convert pin from bit to percent
-        return 420.69
+        # call _analogRead from lib
+        return random.randrange(80, 100)
+    

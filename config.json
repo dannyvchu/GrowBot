@@ -1,0 +1,54 @@
+{
+    "Mon": {
+        "moistness": 
+            {
+            "threshold": 8,
+            "desired" : 10,
+            "water_delay" : 10
+            },
+
+        "temperature":
+                {
+                "temp_high_alert": 85,
+                "temp_low_alert": 65,
+                "temp_low_low_alert": 50
+                },
+
+        "sunlight":
+            {
+            "total_sunlight_required": 100
+            },
+
+
+        "humidity": "high",
+
+        "fertilizer": "1-2 times a month"
+
+    },
+    "Snake": {
+        "moistness": 
+            {
+            "threshold": 8,
+            "desired" : 10,
+            "water_delay" : 10
+            },
+
+        "temperature":
+                {
+                "temp_high_alert": 85,
+                "temp_low_alert": 65,
+                "temp_low_low_alert": 50
+                },
+
+        "sunlight":
+            {
+            "total_sunlight_required": 100
+            },
+
+
+        "humidity": "high",
+
+        "fertilizer": "1-2 times a month"
+    }
+
+}
